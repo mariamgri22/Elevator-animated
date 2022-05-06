@@ -1,0 +1,47 @@
+.Elevator {
+    width: 200px;
+    height: 200px;
+    background: rgb(239, 255, 218);
+    border: 1px solid #000;
+    position: absolute;
+    transition: 2000ms;
+    transition-property: bottom;
+    z-index: 2;
+    left: 30%;
+}
+
+.Elevator.floor-1 {
+    bottom: 10%;
+}
+
+.Elevator.floor-2 {
+    bottom: 40%;
+}
+
+.Elevator.floor-3 {
+    bottom: 70%;
+}
+.door {
+    width: 0;
+    height: 100%;
+    background: gray;
+    position: absolute;
+    top: 0;
+    transition: 1500ms;
+    transition-property: width;
+}
+
+.door.left {
+    left: 0;
+    border-right: 1px solid #000;
+}
+
+.door.right {
+    right: 0;
+    border-left: 1px solid #000;
+}
+
+.door.closed {
+    width: 50%;
+    transition: 1000ms;
+}
